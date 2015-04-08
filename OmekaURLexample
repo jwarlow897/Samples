@@ -1,0 +1,14 @@
+<?php //Geolocations Plugins
+    public function filterAdminNavigationMain($navArray)
+    {
+        $navArray['Geolocation'] = array('label'=>__('Map'), 'uri'=>url('geolocation/map/browse'));
+        return $navArray;
+    }
+
+    public function filterPublicNavigationMain($navArray)
+    {
+        $navArray['Geolocation'] = array('label'=>__('Map'), 'uri'=>url('geolocation/map/browse'));
+        return $navArray;
+    }
+    
+?>
